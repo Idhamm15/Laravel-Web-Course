@@ -8,19 +8,19 @@
 @include('components.Home.hero')
 @endsection
 
-@section('content-2')
+{{-- @section('content-2')
 @include('components.Home.sponsor')
-@endsection
+@endsection --}}
 
-@section('content-3')
+@section('content-2')
 @include('components.Home.tools')
 @endsection
 
-@section('content-4')
+{{-- @section('content-4')
 @include('components.Home.trusted')
-@endsection
+@endsection --}}
 
-@section('content-5')
+{{-- @section('content-5')
 @include('components.Home.testimoni')
 @endsection
 
@@ -37,4 +37,4 @@
 @endsection
 
 
-
+ --}}

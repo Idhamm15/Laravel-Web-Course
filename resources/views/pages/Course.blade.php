@@ -9,10 +9,10 @@
 @endsection
 
 @section('content-2')
-@include('components.Home.sponsor')
+@include('components.Course.course')
 @endsection
 
-@section('content-3')
+{{-- @section('content-3')
 @include('components.Home.tools')
 @endsection
 
@@ -34,7 +34,7 @@
 
 @section('content-8')
 @include('components.Home.startFree')
-@endsection
+@endsection --}}
 
 
 
