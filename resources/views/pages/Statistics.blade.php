@@ -5,7 +5,7 @@
 @endsection
 
 @section('content-1')
-@include('components.Home.hero')
+@include('components.Statistics.hero')
 @endsection
 
 @section('content-2')

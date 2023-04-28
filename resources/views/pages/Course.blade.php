@@ -5,7 +5,7 @@
 @endsection
 
 @section('content-1')
-@include('components.Home.hero')
+@include('components.Course.hero')
 @endsection
 
 @section('content-2')
@@ -13,9 +13,10 @@
 @endsection
 
 {{-- @section('content-3')
-@include('components.Home.tools')
-@endsection
+@include('components.Course.course')
+@endsection --}}
 
+{{-- 
 @section('content-4')
 @include('components.Home.trusted')
 @endsection
@@ -34,7 +35,7 @@
 
 @section('content-8')
 @include('components.Home.startFree')
-@endsection --}}
+@endsection
 
 
-
+ --}}

@@ -5,7 +5,7 @@
 @endsection
 
 @section('content-1')
-@include('components.Home.hero')
+@include('components.Feature.hero')
 @endsection
 
 {{-- @section('content-2')
@@ -13,7 +13,7 @@
 @endsection --}}
 
 @section('content-2')
-@include('components.Home.tools')
+@include('components.Feature.tools')
 @endsection
 
 {{-- @section('content-4')

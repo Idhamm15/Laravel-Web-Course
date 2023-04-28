@@ -5,9 +5,9 @@
 @endsection
 
 @section('content-1')
-@include('components.Home.hero')
+@include('components.SystemSPK.hero')
 @endsection
-
+{{-- 
 @section('content-2')
 @include('components.Home.sponsor')
 @endsection
@@ -37,4 +37,4 @@
 @endsection
 
 
-
+ --}}
