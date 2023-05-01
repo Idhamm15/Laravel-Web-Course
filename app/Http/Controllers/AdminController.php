@@ -8,6 +8,6 @@ class AdminController extends Controller
 {
     public function index()
      {
-        dd('Halaman Admin');
+        return view('pages.Admin.Dashboard');
      }
 }

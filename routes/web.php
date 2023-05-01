@@ -31,14 +31,19 @@ Route::get('/logout',[App\Http\Controllers\AuthController::class, 'logout']) -> 
 
 
 // Admin
-Route::get('/ds', function () {
-    return view('welcome');
-});
-// Route::get('/dashboard',[App\Http\Controllers\AdminController::class, 'index']);
+// Route::get('/ds', function () {
+//     return view('welcome');
+// });
+Route::get('/dashboard',[App\Http\Controllers\AdminController::class, 'index']);
 Route::get('/daftar-user',[App\Http\Controllers\AdminController::class, 'admin-user']) -> middleware('auth') -> name('admin-user') ;
 Route::get('/daftar-course',[App\Http\Controllers\AdminController::class, 'daftar-course']) -> middleware('auth') -> name('admin-course');
 
 
+
+// Test
+Route::get('/testing', function () {
+    return view('pages.Admin.Dashboard');
+});
 
 
 
