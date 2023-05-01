@@ -37,7 +37,7 @@
     @yield('content-7')
     @yield('content-8')
 
-    
+
 
     <!-- Footer -->
     @include('components.footer')

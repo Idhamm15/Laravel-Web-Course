@@ -1,38 +1,50 @@
 {
-  "name": "landwind",
-  "version": "1.0.0",
-  "description": "Landwind is a free and open-source landing page built with Tailwind CSS and Flowbite for SaaS and product websites.",
-  "main": "index.js",
+  "name": "soft-ui-dashboard",
+  "version": "1.0.7",
+  "description": "Freebie Dashboard for Bootstrap 5",
+  "main": "pages/dashboard.html",
+  "directories": {
+    "example": "root"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "open-app": "gulp open-app",
+    "start": "npm run open-app",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "gulp-watch"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/themesberg/landwind.git"
+    "url": "git+https://github.com/creativetimofficial/soft-ui-dashboard.git"
   },
   "keywords": [
-    "landing",
-    "page",
-    "tailwind",
-    "tailwind",
-    "css",
-    "flowbite",
-    "responsive",
-    "html",
-    "css",
-    "javascript",
-    "design"
+    "soft ui dashboard",
+    "bootstrap 5",
+    "dashboard",
+    "creative tim",
+    "html dashboard",
+    "html css dashboard",
+    "web dashboard",
+    "freebie",
+    "free bootstrap dashboard",
+    "css3 dashboard",
+    "bootstrap dashboard",
+    "frontend",
+    "responsive bootstrap dashboard"
   ],
-  "author": "Themesberg",
+  "author": "Creative Tim <hello@creative-tim.com> (https://www.creative-tim.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/themesberg/landwind/issues"
+    "url": "https://github.com/creativetimofficial/soft-ui-dashboard/issues"
   },
-  "homepage": "https://github.com/themesberg/landwind#readme",
   "devDependencies": {
-    "tailwindcss": "^3.1.4"
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean": "^0.4.0",
+    "gulp-install": "^1.1.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-open": "^3.0.1",
+    "sass": "^1.49.9"
   },
-  "dependencies": {
-    "flowbite": "^1.4.7"
-  }
+  "homepage": "http://creative-tim.com/product/soft-ui-dashboard"
 }
