@@ -1,16 +1,16 @@
 <section class="bg-white dark:bg-gray-900">
 <div class="max-w-screen-xl px-4 py-8 mx-auto lg:py-24 lg:px-6">
     <div class="max-w-screen-md mx-auto mb-8 text-center lg:mb-12">
-        <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">Designed for business teams like yours</h2>
-        <p class="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">Here at Landwind we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
+        <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">Paket Berlangganan Layanan SPK</h2>
+        <p class="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">Anda bisa memeli membership untuk berlangganan layanan kami</p>
     </div>
     <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
         <!-- Pricing Card -->
         <div class="flex flex-col max-w-lg p-6 mx-auto text-center text-gray-900 bg-white border border-gray-100 rounded-lg shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
-            <h3 class="mb-4 text-2xl font-semibold">Starter</h3>
-            <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Best option for personal use & for your next project.</p>
+            <h3 class="mb-4 text-2xl font-semibold">Pelajar</h3>
+            <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Pilihan terbaik untuk penggunaan pribadi & untuk proyek Anda selanjutnya.</p>
             <div class="flex items-baseline justify-center my-8">
-                <span class="mr-2 text-5xl font-extrabold">$29</span>
+                <span class="mr-2 text-5xl font-extrabold">Rp.50.000</span>
                 <span class="text-gray-500 dark:text-gray-400">/month</span>
             </div>
             <!-- List -->
@@ -45,10 +45,10 @@
         </div>
         <!-- Pricing Card -->
         <div class="flex flex-col max-w-lg p-6 mx-auto text-center text-gray-900 bg-white border border-gray-100 rounded-lg shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
-            <h3 class="mb-4 text-2xl font-semibold">Company</h3>
-            <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Relevant for multiple users, extended & premium support.</p>
+            <h3 class="mb-4 text-2xl font-semibold">Bisnis</h3>
+            <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Relevan untuk banyak pengguna, dukungan diperpanjang & premium.</p>
             <div class="flex items-baseline justify-center my-8">
-                <span class="mr-2 text-5xl font-extrabold">$99</span>
+                <span class="mr-2 text-5xl font-extrabold">Rp.100.000</span>
                 <span class="text-gray-500 dark:text-gray-400" dark:text-gray-400>/month</span>
             </div>
             <!-- List -->
@@ -83,10 +83,10 @@
         </div>
         <!-- Pricing Card -->
         <div class="flex flex-col max-w-lg p-6 mx-auto text-center text-gray-900 bg-white border border-gray-100 rounded-lg shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
-            <h3 class="mb-4 text-2xl font-semibold">Enterprise</h3>
-            <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Best for large scale uses and extended redistribution rights.</p>
+            <h3 class="mb-4 text-2xl font-semibold">Professional</h3>
+            <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Terbaik untuk penggunaan skala besar dan hak redistribusi diperpanjang.</p>
             <div class="flex items-baseline justify-center my-8">
-                <span class="mr-2 text-5xl font-extrabold">$499</span>
+                <span class="mr-2 text-5xl font-extrabold">Rp.200.000</span>
                 <span class="text-gray-500 dark:text-gray-400">/month</span>
             </div>
             <!-- List -->

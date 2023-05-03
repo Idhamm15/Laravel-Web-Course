@@ -16,7 +16,7 @@
 @include('components.Course.course')
 @endsection --}}
 
-{{-- 
+{{--
 @section('content-4')
 @include('components.Home.trusted')
 @endsection

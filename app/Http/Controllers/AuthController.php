@@ -32,14 +32,14 @@ class AuthController extends Controller
             return redirect()->intended('/dashboard');
         }
 
-        return back()->withErrors([
-            'email' => 'Login Wrong !!'
-        ])->onlyInput('email');
+        // return back()->withErrors([
+        //     'email' => 'Login Wrong !!'
+        // ])->onlyInput('email');
 
-        // Session::flash('status', 'failed');
-        // Session::flash('message', 'Login Wrong !!');
+        Session::flash('status', 'failed');
+        Session::flash('message', 'Login Gagal, Akun Tidak Ditemukan !!');
 
-        // return redirect('/login');
+        return redirect('/login');
     }
 
     public function logout(Request $request)

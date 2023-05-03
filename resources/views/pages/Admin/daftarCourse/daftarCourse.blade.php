@@ -1,9 +1,9 @@
 @extends('layouts.admin')
 
 @section('title')
-    Dashboard
+    Daftar Course
 @endsection
 
 @section('content-1')
-@include('components.Admin.Dashboard.content')
+@include('components.Admin.daftarCourse.content')
 @endsection

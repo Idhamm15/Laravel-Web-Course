@@ -108,7 +108,7 @@
               </div>
               <div class="grow ml-6">
                 <p class="font-bold mb-1">Technical support</p>
-                <p class="text-gray-500">support@example.com</p>
+                <p class="text-gray-500">support@jagowebdev.com</p>
                 <p class="text-gray-500">+1 234-567-89</p>
               </div>
             </div>
@@ -127,7 +127,7 @@
               </div>
               <div class="grow ml-6">
                 <p class="font-bold mb-1">Sales questions</p>
-                <p class="text-gray-500">sales@example.com</p>
+                <p class="text-gray-500">sales@jagowebdev.com</p>
                 <p class="text-gray-500">+1 234-567-89</p>
               </div>
             </div>
@@ -146,7 +146,7 @@
               </div>
               <div class="grow ml-6">
                 <p class="font-bold mb-1">Press</p>
-                <p class="text-gray-500">press@example.com</p>
+                <p class="text-gray-500">press@jagowebdev.com</p>
                 <p class="text-gray-500">+1 234-567-89</p>
               </div>
             </div>
@@ -165,7 +165,7 @@
               </div>
               <div class="grow ml-6">
                 <p class="font-bold mb-1">Bug report</p>
-                <p class="text-gray-500">bugs@example.com</p>
+                <p class="text-gray-500">bugs@jagowebdev.com</p>
                 <p class="text-gray-500">+1 234-567-89</p>
               </div>
             </div>
