@@ -7,7 +7,7 @@
         <div class="flex flex-wrap items-center">
           <div class="block w-full lg:flex grow-0 shrink-0 basis-auto lg:w-6/12 xl:w-4/12">
             <img
-              src="https://mdbootstrap.com/img/new/ecommerce/vertical/086.jpg"
+              src="./images/programmer-2.jpg    "
               alt="Trendy Pants and Shoes"
               class="w-full rounded-t-lg lg:rounded-tr-none lg:rounded-bl-lg"
             />

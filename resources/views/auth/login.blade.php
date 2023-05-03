@@ -12,11 +12,11 @@
               </h1>
 
               {{-- Panel Validasi Login --}}
-            {{-- @if(Session::has('status'))
+            @if(Session::has('status'))
                 <div role="alert">
                     {{Session::get('message')}}
                 </div>
-            @endif --}}
+            @endif
 
               <form method="POST" action="" class="space-y-4 md:space-y-6" >
                 @csrf

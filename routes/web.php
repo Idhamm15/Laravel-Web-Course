@@ -34,15 +34,25 @@ Route::get('/logout',[App\Http\Controllers\AuthController::class, 'logout']) -> 
 // Route::get('/ds', function () {
 //     return view('welcome');
 // });
-Route::get('/dashboard',[App\Http\Controllers\AdminController::class, 'index']);
-Route::get('/daftar-user',[App\Http\Controllers\AdminController::class, 'admin-user']) -> middleware('auth') -> name('admin-user') ;
-Route::get('/daftar-course',[App\Http\Controllers\AdminController::class, 'daftar-course']) -> middleware('auth') -> name('admin-course');
+Route::get('/dashboard',[App\Http\Controllers\AdminController::class, 'index']) -> name('dashboard');
+
+
+// Route::get('/daftar-course',[App\Http\Controllers\AdminCourseController::class, 'adminCourse']) ->name('admin-course');
+use App\Http\Controllers\AdminCourseController;
+Route::controller(AdminCourseController::class)->group(function() {
+    Route::get('daftar-course/', 'index') ->name('admin-course');
+    Route::get('daftar-course/add', 'add');
+    Route::post('daftar-course/store', 'store');
+    Route::get('daftar-course//edit/{id}', 'edit');
+    Route::post('daftar-course/update/{id}', 'update');
+    Route::get('daftar-course/delete/{id}', 'delete');
+});
 
 
 
 // Test
 Route::get('/testing', function () {
-    return view('pages.Admin.Dashboard');
+    return view('pages.Admin.daftarCourse.addDataCourse');
 });
 
 
