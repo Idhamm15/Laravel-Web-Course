@@ -5,5 +5,7 @@
 @endsection
 
 @section('content-1')
-@include('components.Admin.daftarCourse.content')
+@include('components.Admin.daftarCourse.add')
 @endsection
+
+

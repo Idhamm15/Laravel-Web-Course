@@ -2,87 +2,79 @@
 
 namespace App\Http\Controllers;
 
+use id;
+use App\Models\User;
 use App\Models\course;
 use Illuminate\Http\Request;
 
 class AdminCourseController extends Controller
 {
        public function index() {
-        return view('pages.Admin.daftarCourse.daftarCourse', [
+        return view('pages.Admin.daftarCourse.index', [
             'users' => course::all(),
             'title' => 'Data Course'
         ]);
     }
+
     public function add() {
-        return view('pages.Admin.daftarCourse.addDataCourse',[
+        return view('pages.Admin.daftarCourse.add',[
             'title' => 'Tambah Data Course'
         ]);
     }
-    // public function edit($id){
 
-    //     $peserta = User::where('id', $id)->first();
+    public function store(Request $request) {
+        $name      = $request->input('name');
+        $harga      = $request->input('harga');
+        $status   = $request->input('status');
+        $deskripsi = $request->input('deskripsi');
+        // $alamat = $request->input('alamat');
+        // $tinggi_badan = $request->input('tinggi_badan');
+        // TODO: Compare $password and $rePassword
 
-    //     return view('editdatapeserta', [
-    //         'peserta' => $peserta,
-    //         'title' => 'Edit Data peserta'
-    //     ]);
+        $course           = new course;
+        $course ->name    = $name;
+        $course->harga     = $harga;
+        $course->status = $status; // Don't forget to encryp!s
+        $course->deskripsi= $deskripsi;
+        // $peserta->alamat = $alamat;
+        // $peserta->tinggi_badan = $tinggi_badan;
 
-    // }
+        $course->save();
 
-    // public function update(Request $request, $id) {
-    //     $nama_peserta      = $request->input('nama_peserta');
-    //     $jenis_kelamin       = $request->input('jenis_kelamin');
-    //     $tempat_lahir   = $request->input('tempat_lahir');
-    //     $tanggal_lahir = $request->input('tanggal_lahir');
-    //     $alamat = $request->input('alamat');
-    //     $tinggi_badan = $request->input('tinggi_badan');
+        return redirect()->to('/daftar-course');
+    }
 
-    //     $peserta = User::where('id', $id)->first();
-    //     $peserta->nama_peserta    = $nama_peserta;
-    //     $peserta->jenis_kelamin     = $jenis_kelamin;
-    //     $peserta->tempat_lahir = $tempat_lahir;
-    //     $peserta->tanggal_lahir = $tanggal_lahir;
-    //     $peserta->alamat = $alamat;
-    //     $peserta->tinggi_badan = $tinggi_badan;
+    public function edit($id){
 
-    //     $peserta->save();
+        $course = course::where('id', $id)->first();
 
-    //     return redirect()->to('/peserta');
-    // }
+        return view('pages.Admin.daftarCourse.edit', [
+            'course' => $course,
+            'title' => 'Edit Data course'
+        ]);
 
+    }
 
-    // public function dashboard(){
-    //     $peserta= User::count();
+    public function update(Request $request, $id) {
+        $name      = $request->input('name');
+        $harga      = $request->input('harga');
+        $status   = $request->input('status');
+        $deskripsi = $request->input('deskripsi');
 
-    //     return view('main', compact('peserta'));
+        $course = course::where('id', $id)->first();
+        $course ->name    = $name;
+        $course->harga     = $harga;
+        $course->status = $status; // Don't forget to encryp!s
+        $course->deskripsi= $deskripsi;
 
-    // }
+        $course->save();
 
-    // public function store(Request $request) {
-    //     $nama_peserta      = $request->input('nama_peserta');
-    //     $jenis_kelamin       = $request->input('jenis_kelamin');
-    //     $tempat_lahir   = $request->input('tempat_lahir');
-    //     $tanggal_lahir = $request->input('tanggal_lahir');
-    //     $alamat = $request->input('alamat');
-    //     $tinggi_badan = $request->input('tinggi_badan');
-    //     // TODO: Compare $password and $rePassword
+        return redirect()->to('/daftar-course');
+    }
 
-    //     $peserta           = new User;
-    //     $peserta->nama_peserta    = $nama_peserta;
-    //     $peserta->jenis_kelamin     = $jenis_kelamin;
-    //     $peserta->tempat_lahir = $tempat_lahir; // Don't forget to encryp!s
-    //     $peserta->tanggal_lahir = $tanggal_lahir;
-    //     $peserta->alamat = $alamat;
-    //     $peserta->tinggi_badan = $tinggi_badan;
-
-    //     $peserta->save();
-
-    //     return redirect()->to('/peserta');
-    // }
-    // public function delete($id) {
-    //     $peserta = User::where('id', $id)->first();
-    //     $peserta->delete();
-    //     return redirect()->back();
-    // }
-
+    public function delete($id) {
+        $peserta = course::where('id', $id)->first();
+        $peserta->delete();
+        return redirect()->back();
+    }
 }

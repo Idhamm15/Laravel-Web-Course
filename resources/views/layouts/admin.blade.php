@@ -70,6 +70,7 @@
         <!-- Content -->
         <main class="h-full overflow-y-auto">
           @yield('content-1')
+          @yield('content-2')
         </main>
 
       </div>
