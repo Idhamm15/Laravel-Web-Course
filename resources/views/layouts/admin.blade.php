@@ -68,7 +68,7 @@
         @include('components.Admin.header')
 
         <!-- Content -->
-        <main class="h-full overflow-y-auto">
+        <main class="h-full pb-16 overflow-y-auto">
           @yield('content-1')
           @yield('content-2')
         </main>

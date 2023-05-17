@@ -1,31 +1,141 @@
 <!-- Validation inputs -->
-<h4
-    class="mb-4 text-lg text-center font-semibold text-gray-600 dark:text-gray-300"
+<div class="container px-6 mx-auto grid">
+<!-- Inputs with icons -->
+<h2
+    class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200"
 >
-    Update Data Course
-</h4>
-
-
+    Edit Data Course
+</h2>
 <form method="POST" action="{{ url('/daftar-course/update/'.$course->id) }}">
-  @csrf
-  <div class="mb-6">
-    <label for="name" class="block mb-2 text-sm font-medium text-gray-200 dark:text-white">Your name</label>
-    <input type="text" name="name" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Your name" value="{{ $course->name}}" required>
-  </div> <br/>
-  <div class="mb-6">
-    <label for="harga" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Harga</label>
-    <input type="text" name="harga" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" value="{{ $course->harga}}" required>
-  </div>
-  <div class="mb-6">
-    <label for="status" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Status</label>
-    <input type="text" name="status" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" value="{{ $course->status}}" required>
-  </div>
-  <div class="mb-6">
-    <label for="deskripsi" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Deskripsi</label>
-    <input type="text rows="4" name="deskripsi" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Deskripsi Course ..." value="{{ $course->deskripsi}}"></textarea>
-  </div>
+    @csrf
+    <div
+    class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800"
+>
+    {{-- Nama Course --}}
+    <label class="block mt-4 text-sm">
+    <span class="text-gray-700 dark:text-gray-400">Nama Course</span>
+    <!-- focus-within sets the color for the icon when input is focused -->
+    <div
+        class="relative text-gray-500 focus-within:text-purple-600 dark:focus-within:text-purple-400"
+    >
+        <input
+        type="text" name="name"
+        class="block w-full pr-10 mt-1 text-sm text-black dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray form-input"
+        placeholder="Name Course . ."
+        value="{{ $course->name}}"
+        />
+        <div
+        class="absolute inset-y-0 right-0 flex items-center mr-3 pointer-events-none"
+        >
+        <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+        >
+        </svg>
+        </div>
+    </div>
+    </label>
 
-  <div class="px-2 my-2">
+    {{-- Harga --}}
+    <label class="block mt-4 text-sm">
+    <span class="text-gray-700 dark:text-gray-400">Harga</span>
+    <!-- focus-within sets the color for the icon when input is focused -->
+    <div
+        class="relative text-gray-500 focus-within:text-purple-600 dark:focus-within:text-purple-400"
+    >
+        <input
+        type="text" name="harga"
+        class="block w-full pr-10 mt-1 text-sm text-black dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray form-input"
+        placeholder="Rp."
+        value="{{ $course->harga}}"
+        />
+        <div
+        class="absolute inset-y-0 right-0 flex items-center mr-3 pointer-events-none"
+        >
+        <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+        >
+        </svg>
+        </div>
+    </div>
+    </label>
+
+    {{-- Status --}}
+    <label class="block mt-4 text-sm">
+    <span class="text-gray-700 dark:text-gray-400">Status</span>
+    <!-- focus-within sets the color for the icon when input is focused -->
+    <div
+        class="relative text-gray-500 focus-within:text-purple-600 dark:focus-within:text-purple-400"
+    >
+        <input
+        type="text" name="status"
+        class="block w-full pr-10 mt-1 text-sm text-black dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray form-input"
+        placeholder="Aktif / Tidak Aktif"
+        value="{{ $course->status}}"
+        />
+        <div
+        class="absolute inset-y-0 right-0 flex items-center mr-3 pointer-events-none"
+        >
+        <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+        >
+        </svg>
+        </div>
+    </div>
+    </label>
+
+    {{-- Deskripsi --}}
+    <label class="block mt-4 text-sm">
+    <span class="text-gray-700 dark:text-gray-400">Deskripsi</span>
+    <!-- focus-within sets the color for the icon when input is focused -->
+    <div
+        class="relative text-gray-500 focus-within:text-purple-600 dark:focus-within:text-purple-400"
+    >
+        <input
+        type="text" name="deskripsi"
+        class="block w-full pr-10 mt-1 text-sm text-black dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray form-input"
+        placeholder="Deskripsi . . ."
+        value="{{ $course->deskripsi}}"
+        />
+        <div
+        class="absolute inset-y-0 right-0 flex items-center mr-3 pointer-events-none"
+        >
+        <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+        >
+        </svg>
+        </div>
+    </div>
+    </label>
+</div>
+<div class="px-2 my-2">
     <button
         type="submit"
         class="px-4 py-2 text-sm font-medium leading-5 text-white text-align-center transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"
@@ -33,4 +143,7 @@
         Simpan
     </button>
     </div>
+</div>
 </form>
+
+
